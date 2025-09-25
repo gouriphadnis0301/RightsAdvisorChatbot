@@ -1,0 +1,179 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: url("path-to-your-background-image.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Chat Container Styles */
+#chat-container {
+  position: relative;
+  width: 700px; /* Increased width */
+  height: 80vh; /* Increased height */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+#chat-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #2b6cb0, #3182ce); /* Updated gradient colors */
+  color: #ffffff;
+}
+
+#chat-avatar {
+  width: 60px; /* Increased avatar size */
+  height: 60px; /* Increased avatar size */
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #ffffff;
+}
+
+#chat-title {
+  font-size: 24px; /* Increased font size */
+  flex: 1;
+}
+
+#chat-close {
+  font-size: 28px; /* Increased close button size */
+  cursor: pointer;
+}
+
+/* Messages Styles */
+#chat-messages {
+  flex: 1;
+  padding: 20px; /* Increased padding */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  border-radius: 15px;
+  padding: 15px; /* Increased padding */
+  margin: 10px 0; /* Adjust margin */
+  max-width: 80%;
+  color: #ffffff;
+}
+
+.user-message {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.bot-message {
+  align-self: flex-start;
+  background: linear-gradient(135deg, #14b8a6, #10b981);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Area Styles */
+#chat-input {
+  display: flex;
+  padding: 20px; /* Increased padding */
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid #ffffff;
+}
+
+#message-input {
+  flex: 1;
+  padding: 15px; /* Increased padding */
+  border-radius: 15px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  resize: none;
+  font-size: 18px; /* Increased font size */
+  outline: none;
+}
+
+#message-input:focus {
+  border: 1px solid #3182ce;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#send-button {
+  background: #3182ce; /* Changed blue color */
+  border: none;
+  color: #ffffff;
+  font-size: 28px; /* Increased font size */
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px; /* Reduced padding */
+  margin-left: 15px;
+  transition: background 0.3s;
+}
+
+#send-button:hover {
+  background: #2b6cb0;
+}
+
+/* Microphone Button Styles */
+#mic-button {
+  background: none;
+  border: none;
+  padding: 0; /* Remove padding */
+  margin: 0 10px; /* Adjust margin as needed */
+  cursor: pointer;
+}
+
+#mic-button img {
+  width: 30px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+}
+
+/* Suggestion Box Styles */
+#suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px; /* Increased padding */
+  background: rgba(255, 255, 255, 0.2);
+  border-top: 1px solid #ffffff;
+}
+
+.suggestion-button {
+  background: #3182ce; /* Changed blue color */
+  border: none;
+  color: #ffffff;
+  font-size: 18px; /* Increased font size */
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin: 5px;
+  transition: background 0.3s;
+}
+
+.suggestion-button:hover {
+  background: #2b6cb0;
+}
+
+/* Content Display Styles */
+#content-display {
+  padding: 20px; /* Increased padding */
+  background: rgba(255, 255, 255, 0.2);
+  border-top: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 18px; /* Increased font size */
+  display: none;
+  max-height: 300px; /* Increased max-height */
+  overflow-y: auto;
+}
+
+#content-display.show {
+  display: block;
+}
