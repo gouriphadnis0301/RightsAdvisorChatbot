@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Right Advisor</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div id="chat-container">
+      <div id="chat-header">
+        <img
+          id="chat-avatar"
+          src="https://www.marktechpost.com/wp-content/uploads/2023/05/7309681-scaled.jpg"
+          alt="Chatbot Avatar"
+        />
+        <div id="chat-title">Right Advisor</div>
+        <div id="chat-close">✖</div>
+      </div>
+      <div id="chat-messages">
+        <!-- Messages will be dynamically added here -->
+      </div>
+      <div id="chat-input">
+        <textarea
+          id="message-input"
+          placeholder="Type your message..."
+        ></textarea>
+        <button id="mic-button">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw1uv3WrhYzRKw0qjo8wZ0r9m807mGOW2iXg&s" alt="Microphone">
+        </button>
+        <button id="send-button">➤</button>
+      </div>
+      <div id="suggestions">
+        <!-- Suggestion buttons will be dynamically added here -->
+      </div>
+      <div id="content-display">
+        <!-- Content related to suggestions will be displayed here -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
